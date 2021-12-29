@@ -27,12 +27,10 @@
 </head>
 
 <body>
-  <button id="back">返回全国</button>
   <div id="china-map"></div>
 
   <script>
     var myChart = echarts.init(document.getElementById('china-map'));
-    var oBack = document.getElementById("back");
 
     var provinces = ['shanghai', 'hebei', 'shanxi', 'neimenggu', 'liaoning', 'jilin', 'heilongjiang', 'jiangsu', 'zhejiang', 'anhui', 'fujian', 'jiangxi', 'shandong', 'henan', 'hubei', 'hunan', 'guangdong', 'guangxi', 'hainan', 'sichuan', 'guizhou', 'yunnan', 'xizang', 'shanxi1', 'gansu', 'qinghai', 'ningxia', 'xinjiang', 'beijing', 'tianjin', 'chongqing', 'xianggang', 'aomen','hefei'];
 
@@ -144,10 +142,6 @@
       name: '宣城',
       value: 60
     }];
-
-    oBack.onclick = function () {
-      initEcharts("china", "中国");
-    };
 
     initEcharts("china", "中国");
 
